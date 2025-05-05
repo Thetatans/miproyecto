@@ -4,9 +4,17 @@
         <servlet-name>RegistroServlet</servlet-name>
         <servlet-class>com.miproyecto.servlets.RegistroServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <servlet-class>com.miproyecto.servlets.ConsultaServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>RegistroServlet</servlet-name>
         <url-pattern>/RegistroServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultaServlet</servlet-name>
+        <url-pattern>/ConsultaServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
