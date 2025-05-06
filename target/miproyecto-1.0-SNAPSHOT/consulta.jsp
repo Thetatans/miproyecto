@@ -37,11 +37,13 @@
         <h1>Consulta de Usuarios</h1>
         
         <%-- Formulario de búsqueda que usa método GET --%>
-        <form action="consulta" method="GET">
+        <form action="ConsultaServlet" method="GET">
             <div class="form-group">
                 <label for="email">Buscar usuario por email:</label>
                 <input type="email" id="email" name="email" required>
                 <button type="submit" class="btn">Buscar</button>
+                
+                
             </div>
         </form>
         

@@ -37,7 +37,7 @@
         <% } %>
         
         <%-- Formulario de registro que envía datos al servlet mediante POST --%>
-        <form action="registro" method="POST">
+        <form action="RegistroServlet" method="POST">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -65,7 +65,7 @@
         
         <div class="menu">
             <a href="index.jsp">Volver a Inicio</a> | 
-            <a href="consulta">Consultar Usuarios</a>
+            <a href="consulta.jsp">Consultar Usuarios</a>
         </div>
     </div>
 </body>

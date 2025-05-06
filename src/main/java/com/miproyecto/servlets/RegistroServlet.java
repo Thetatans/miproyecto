@@ -16,52 +16,47 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "RegistroServlet", urlPatterns = {"/registro"})
-
 public class RegistroServlet extends HttpServlet {
     
-    //metodo para manejar solicitudes post (registrar usuario)
-    
+    // Método para manejar solicitudes POST (registrar usuario)
     @Override
-    protected void doPost (HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException{
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         
-        //se obtiene los datos del formulario
-        
+        // Obtenemos los datos del formulario
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         
-        //creamos un objeto usuario ocn los datos del furmulario
-        Usuario nuevoUsuario = new Usuario (nombre, apellido, email, password);
+        // Creamos un objeto Usuario con los datos del formulario
+        Usuario nuevoUsuario = new Usuario(nombre, apellido, email, password);
         
-        //obtenemos la sesion http
+        // Obtenemos la sesión HTTP
         HttpSession session = request.getSession();
         
-        //recuperamos la lista de usuarios de la sesion (o creamos una nuevA)
+        // Recuperamos la lista de usuarios de la sesión (o creamos una nueva)
         List<Usuario> listaUsuarios = (List<Usuario>) session.getAttribute("listaUsuarios");
         if (listaUsuarios == null) {
             listaUsuarios = new ArrayList<>();
             session.setAttribute("listaUsuarios", listaUsuarios);
         }
         
-        //agregamos el nuevo usuario a la lista
+        // Agregamos el nuevo usuario a la lista
         listaUsuarios.add(nuevoUsuario);
         
-        //agregamos un mensaje de exito
-        request.setAttribute("mensaje", "¡Usuario registrado con exito!");
+        // Agregamos un mensaje de éxito
+        request.setAttribute("mensaje", "¡Usuario registrado con éxito!");
         
-        //redirigimos a la pagina de registro
-        request.getRequestDispatcher("/registro.jsp").forward(request, response);
-        
+        // Redirigimos a la página de registro
+        request.getRequestDispatcher("registro.jsp").forward(request, response);
     }
     
-    //Metodo para manejar solicitudes GET (mostrar formulario)
+    // Método para manejar solicitudes GET (mostrar formulario)
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException{
-        //simplemente reeenviamos a la pagina de registro
-        request.getRequestDispatcher("/registro.jsp").forward(request, response);
+            throws ServletException, IOException {
+        // Simplemente reenviamos a la página de registro
+        request.getRequestDispatcher("registro.jsp").forward(request, response);
     }
-    
 }

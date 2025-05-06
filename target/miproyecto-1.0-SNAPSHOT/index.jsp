@@ -26,8 +26,8 @@
         <p>Este sistema permite registrar nuevos usuarios y consultar la información de usuarios registrados.</p>
         
         <div class="menu">
-            <a href="registro">Registrar Usuario</a>
-            <a href="consulta">Consultar Usuarios</a>
+            <a href="registro.jsp">Registrar Usuario</a>
+            <a href="consulta.jsp">Consultar Usuarios</a>
         </div>
         
         <hr>
@@ -41,7 +41,7 @@
                 <li>Métodos HTTP GET y POST</li>
                 <li>Sesiones para almacenar datos</li>
             </ul>
-        </p>
+        
     </div>
 </body>
 </html>
