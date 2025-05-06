@@ -18,4 +18,4 @@ public class ConsultaServlet extends HttpServlet {
             throws ServletException, IOException{
         //obtener lista de usuarios, buscar si hay parametros de busqueda
     }
-}
+}   
