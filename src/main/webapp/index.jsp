@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido al Sistema de Registro de Usuarios</h1>
+        <h1>Bienvenido al Sistema de Registro de Usuarios de Ilich Esteban</h1>
         
         <p>Este sistema permite registrar nuevos usuarios y consultar la información de usuarios registrados.</p>
         
@@ -40,6 +40,7 @@
                 <li>JSP para renderizar páginas dinámicas</li>
                 <li>Métodos HTTP GET y POST</li>
                 <li>Sesiones para almacenar datos</li>
+                <li>Taller de Ilich Esteban Reyes Botia</li>
             </ul>
         
     </div>
