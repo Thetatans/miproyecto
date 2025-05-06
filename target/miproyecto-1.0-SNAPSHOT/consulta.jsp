@@ -100,8 +100,8 @@
         <% } %>
         
         <div class="menu">
-            <a href="index.jsp">Volver a Inicio</a> | 
-            <a href="registro">Registrar Usuario</a>
+            <a href="index.html">Volver a Inicio</a> | 
+            <a href="registro.jsp">Registrar Usuario</a>
         </div>
     </div>
 </body>

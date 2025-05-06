@@ -64,7 +64,7 @@
         </form>
         
         <div class="menu">
-            <a href="index.jsp">Volver a Inicio</a> | 
+            <a href="index.html">Volver a Inicio</a> | 
             <a href="consulta.jsp">Consultar Usuarios</a>
         </div>
     </div>
